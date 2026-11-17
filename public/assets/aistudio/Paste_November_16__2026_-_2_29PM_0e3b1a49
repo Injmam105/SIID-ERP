@@ -1,0 +1,1580 @@
+# BUILD A COMPLETE SIID ERP APPLICATION FROM SCRATCH
+## Sirahi Infrastructure & Interior Design – Complete Business Management System
+
+Act as a senior full-stack software architect, UI/UX designer, Firebase developer, database engineer and cybersecurity expert.
+
+Build a complete, production-ready, cloud-based ERP application for my company from scratch.
+
+This must be a real, fully functional business management application, not just a UI prototype or demo.
+
+Build the complete frontend, backend, authentication system, cloud database, file storage, OTP verification, dashboards, business modules, PDF generation and synchronization.
+
+Do not create dummy buttons or non-functional screens.
+
+Every feature must be connected to its actual functionality.
+
+---
+
+# 1. COMPANY INFORMATION AND BRANDING
+
+Application Name: SIID ERP
+
+Full Company Name: Sirahi Infrastructure & Interior Design
+
+Owner / Director: MD Zawed Ansar
+
+Owner Mobile Number: 9650598785
+
+Official Email: sirahiinfrainteriordesign@gmail.com
+
+Company Website: https://sirahi.in
+
+Company GSTIN: 07DCYPA1228R1ZZ
+
+Application Developed By: Injmam Ansari
+
+Designation: IT Head of SIID
+
+IT Support Number: 7503354996
+
+Tagline: One Company. Multiple Projects. Complete Control.
+
+Create a professional SIID logo upload and management feature.
+
+Use the actual uploaded company logo throughout the application, including dashboards, login screens, quotations, invoices, reports and PDF documents.
+
+Never invent company information or use placeholder contact details in final documents.
+
+Keep company details configurable through authorized Company Settings.
+
+---
+
+# 2. APPLICATION OBJECTIVE
+
+Build a complete cloud-based ERP system for managing:
+
+- Interior Designing.
+- Infrastructure Projects.
+- Construction Work.
+- Multiple Project Sites.
+- Permanent Employees.
+- Contract Employees.
+- Daily Wage Labour.
+- Attendance.
+- Salary and Wages.
+- Client Management.
+- Project Management.
+- Site Management.
+- Material Inventory.
+- Vendors and Suppliers.
+- Quotations.
+- Invoices.
+- Payments.
+- Expenses.
+- Financial Reports.
+- Documents.
+- Notifications.
+- Employee and Client Approvals.
+
+The application must support multiple projects and multiple locations at the same time.
+
+---
+
+# 3. APPLICATION DESIGN AND THEME
+
+Create a premium, modern enterprise-level interface.
+
+Theme:
+
+- Primary: Deep Navy Blue.
+- Secondary: Royal Blue.
+- Accent: Elegant Gold.
+- Background: Premium Off-White.
+- Cards: Clean White.
+- Text: Dark Navy and Charcoal.
+
+Design requirements:
+
+- Professional company dashboard.
+- Premium sidebar navigation.
+- Modern icons.
+- Beautiful dashboard cards.
+- Interactive charts and graphs.
+- Professional data tables.
+- Search and filters.
+- Modern forms.
+- Responsive mobile interface.
+- Desktop and tablet support.
+- Smooth animations.
+- Light and dark mode.
+- Loading indicators.
+- Error and success notifications.
+- Consistent typography and spacing.
+
+All panels must have a consistent SIID brand identity.
+
+However, each panel must have a layout appropriate to its user role.
+
+---
+
+# 4. ROLE-BASED LOGIN SYSTEM
+
+Create a professional welcome page with separate login options:
+
+1. Admin Login.
+2. Employee Login.
+3. Client Login.
+
+Use secure authentication.
+
+Allow login using registered mobile number or email address and password.
+
+Include:
+
+- Show/Hide Password.
+- Forgot Password.
+- Reset Password.
+- Logout.
+- Session Management.
+- Secure Route Protection.
+- Role-Based Dashboard Redirection.
+
+Never allow users to access another role's dashboard by manually changing the URL.
+
+## User Roles
+
+Create these roles:
+
+1. Owner / Super Admin.
+2. Admin.
+3. Accountant.
+4. Site Manager.
+5. Interior Designer.
+6. Permanent Employee.
+7. Contract Employee.
+8. Daily Wage Labour.
+9. Client.
+
+Implement proper permissions for each role.
+
+### Owner / Super Admin
+
+Owner must have complete authorized control over:
+
+- All projects.
+- All employees.
+- All clients.
+- All administrators.
+- Financial records.
+- Reports.
+- Quotations.
+- Company settings.
+- User permissions.
+- Database-related administration.
+- Business operations.
+
+### Admin
+
+Admin can manage:
+
+- Employees.
+- Clients.
+- Projects.
+- Sites.
+- Attendance.
+- Quotations.
+- Materials.
+- Inventory.
+- Payments.
+- Expenses.
+- Documents.
+- Notifications.
+
+### Accountant
+
+Accountant can manage:
+
+- Income.
+- Expenses.
+- Salary.
+- Labour payments.
+- Vendor payments.
+- Client payments.
+- Invoices.
+- Financial reports.
+
+### Site Manager
+
+Site Manager can access only assigned sites and projects.
+
+They can manage:
+
+- Site attendance.
+- Labour assignments.
+- Daily progress.
+- Material requests.
+- Site photographs.
+- Work reports.
+
+### Interior Designer
+
+Interior Designer can manage:
+
+- Interior design projects.
+- 2D floor plans.
+- 3D renders.
+- Room-wise designs.
+- Furniture layouts.
+- Material specifications.
+- Design revisions.
+- Client design approvals.
+
+### Employees and Labour
+
+They can access only their own permitted information:
+
+- Profile.
+- Attendance.
+- Assigned work.
+- Salary or wages.
+- Leave.
+- Advance payment.
+- Notifications.
+
+### Client
+
+Client can access only their own:
+
+- Projects.
+- Quotations.
+- Work progress.
+- Project photographs.
+- Payment details.
+- Invoices.
+- Documents.
+- Complaints.
+- Project updates.
+
+---
+
+# 5. ADMIN LOGIN AND ACCOUNT MANAGEMENT
+
+Create a secure initial Owner/Admin account using a protected first-time setup process.
+
+Initial Owner mobile number: 9650598785.
+
+Do not create a public Admin registration option.
+
+The first Owner account must be created through a secure server-side bootstrap or protected setup process.
+
+Do not hardcode weak passwords in frontend source code.
+
+Require a strong password and force password change during initial setup.
+
+Admin must be able to manage authorized accounts, change credentials and configure permissions.
+
+---
+
+# 6. EMPLOYEE REGISTRATION WITH REAL MOBILE OTP
+
+Create an Employee Registration page.
+
+Fields:
+
+- Full Name.
+- Mobile Number.
+- Email.
+- Password.
+- Confirm Password.
+- Employee Type.
+- Address.
+- Emergency Contact.
+- Joining Date.
+- Profile Photograph.
+- Documents.
+
+## Mandatory OTP Workflow
+
+STEP 1: Employee enters their mobile number.
+
+STEP 2: Employee clicks Send OTP.
+
+STEP 3: Send an actual SMS OTP to the exact registered mobile number.
+
+STEP 4: Employee enters the received OTP.
+
+STEP 5: Verify the OTP using Firebase Phone Authentication or a properly configured secure SMS provider.
+
+STEP 6: Only after successful verification can the registration be submitted.
+
+STEP 7: Save the account with:
+
+Mobile Verified: TRUE
+
+Account Status: PENDING_APPROVAL
+
+STEP 8: Admin receives a new registration notification.
+
+STEP 9: Admin can approve or reject the registration.
+
+STEP 10: Only approved employees can access their dashboard.
+
+## Critical OTP Security
+
+- Real SMS OTP only.
+- Never use fake OTP.
+- Never hardcode OTP.
+- Never show OTP in frontend.
+- Never trust a frontend-only verification flag.
+- Verify phone authentication through a trusted backend/provider.
+- OTP must expire.
+- Add resend countdown.
+- Apply verification attempt limits.
+- Apply SMS resend limits.
+- Prevent duplicate mobile registrations.
+- Do not allow registration without verified mobile authentication.
+- Do not allow pending or rejected employees to access dashboards.
+
+If SMS configuration is missing, show the actual configuration error and block registration.
+
+Do not pretend that OTP was sent if the SMS provider did not confirm the request.
+
+---
+
+# 7. CLIENT REGISTRATION AND OTP
+
+Create a separate Client Registration page.
+
+Fields:
+
+- Client Name.
+- Mobile Number.
+- Email.
+- Password.
+- Confirm Password.
+- Address.
+- City.
+- State.
+- GSTIN (optional).
+
+Apply the same mandatory real mobile OTP verification.
+
+After successful verification:
+
+Account Status: PENDING_APPROVAL.
+
+Admin must approve the client before dashboard access.
+
+Clients must not be able to create Admin or Employee accounts by changing registration fields or API requests.
+
+---
+
+# 8. CLOUD DATABASE AND PERMANENT DATA STORAGE
+
+THIS IS ONE OF THE MOST IMPORTANT REQUIREMENTS.
+
+Build this application using a properly configured cloud-based backend.
+
+Preferred technology:
+
+Frontend:
+- React.
+- TypeScript.
+- Modern responsive UI.
+- Reusable components.
+
+Backend and Cloud:
+- Firebase Authentication.
+- Cloud Firestore.
+- Firebase Storage.
+- Firebase Cloud Functions or a secure backend API where required.
+
+Use the latest compatible stable SDK versions.
+
+If another backend is genuinely required, explain why before replacing the preferred architecture.
+
+## Cloud Database Requirements
+
+All important application records must be stored in the central cloud database.
+
+Store:
+
+- Owner and Admin records.
+- Employee profiles.
+- Client profiles.
+- Attendance.
+- Check-in and Check-out.
+- Salaries.
+- Daily wages.
+- Advances.
+- Leave records.
+- Projects.
+- Project sites.
+- Work assignments.
+- Material inventory.
+- Vendors.
+- Quotations.
+- Quotation items.
+- Material and brand specifications.
+- Invoices.
+- Payments.
+- Expenses.
+- Documents.
+- Notifications.
+- Approval history.
+- Financial reports.
+
+Do not store important business records only in:
+
+- LocalStorage.
+- IndexedDB.
+- SQLite local storage.
+- SharedPreferences.
+- Temporary local JSON files.
+- Device-specific application storage.
+
+Local storage may be used only for appropriate caching and temporary offline operations.
+
+## Important Data Architecture
+
+Use proper database collections and relationships.
+
+Each record should have:
+
+- Unique ID.
+- Company ID.
+- Created At.
+- Updated At.
+- Created By.
+- Updated By.
+- Status.
+- Relevant owner/project/client references.
+
+Use secure access rules.
+
+Implement database indexes where needed.
+
+Use server timestamps and backend validation for important operations.
+
+---
+
+# 9. AUTOMATIC CLOUD SYNCHRONIZATION – PHONE A TO PHONE B
+
+The application must work across multiple devices.
+
+Example:
+
+Phone A:
+- Admin creates a quotation.
+- Employee marks attendance.
+- Site Manager uploads project photographs.
+- Accountant records a payment.
+
+All these changes must be saved to the cloud database.
+
+Phone B:
+- The same authorized user logs in.
+- Application fetches the latest permitted records from the cloud.
+- All relevant information appears automatically.
+
+Requirements:
+
+1. Fetch cloud records after successful login.
+2. Save records directly to the cloud.
+3. Update cloud records after edits.
+4. Support real-time synchronization where appropriate.
+5. Refresh screens after successful updates.
+6. Prevent duplicate records.
+7. Handle simultaneous updates safely.
+8. Preserve data after logout.
+9. Preserve data after reinstalling the application.
+10. Make data available on another authorized device.
+
+If a user creates data on Phone A, the same account must be able to see that data on Phone B.
+
+Do not show local unsynchronized data as if it were saved successfully.
+
+---
+
+# 10. APP UNINSTALLATION, DATA BACKUP AND RECOVERY
+
+Application data must not disappear when a user uninstalls the app.
+
+All important business records must remain stored in the cloud.
+
+After reinstalling:
+
+1. User installs the application again.
+2. User logs in with the same authorized account.
+3. Application fetches records from the cloud.
+4. All permitted previous data becomes available.
+
+Implement:
+
+- Cloud database backups.
+- Scheduled database exports where supported.
+- File backup strategy.
+- Data recovery process.
+- Database migration strategy.
+- Backup retention settings.
+- Restore procedure.
+
+If the application is temporarily offline, provide safe local caching and automatic synchronization when the internet returns.
+
+Show:
+
+- Online.
+- Offline.
+- Sync Pending.
+- Syncing.
+- Sync Completed.
+- Sync Failed.
+
+Do not silently discard unsynchronized records.
+
+Important financial and approval operations must be confirmed by the server before being marked completed.
+
+---
+
+# 11. EMPLOYEE MANAGEMENT MODULE
+
+Admin must be able to:
+
+- Add employees.
+- Approve registrations.
+- Reject registrations.
+- Edit employee information.
+- Deactivate employees.
+- Reactivate employees.
+- Assign employee roles.
+- Assign departments.
+- Assign projects and sites.
+- Upload employee documents.
+- View employee history.
+- Search and filter employees.
+
+Employee details:
+
+- Employee ID.
+- Full Name.
+- Mobile Number.
+- Email.
+- Address.
+- Employee Type.
+- Department.
+- Designation.
+- Joining Date.
+- Salary or Daily Wage.
+- Assigned Site.
+- Emergency Contact.
+- Documents.
+- Account Status.
+
+Generate unique employee IDs automatically.
+
+---
+
+# 12. ATTENDANCE MANAGEMENT
+
+Create a complete attendance module.
+
+Features:
+
+- Check In.
+- Check Out.
+- Present.
+- Absent.
+- Half Day.
+- Leave.
+- Overtime.
+- Attendance History.
+- Monthly Attendance.
+- Daily Attendance Reports.
+- Site-Wise Attendance.
+
+Optional features:
+
+- GPS location verification with user consent.
+- Selfie attendance verification.
+- Attendance correction request.
+- Admin approval for corrections.
+
+Prevent duplicate check-in and check-out records.
+
+Use server timestamps.
+
+Display accurate attendance history across all devices.
+
+---
+
+# 13. SALARY AND LABOUR PAYMENT MANAGEMENT
+
+Support three categories:
+
+A. Permanent Employees.
+
+B. Contract Employees.
+
+C. Daily Wage Labour.
+
+Permanent employee features:
+
+- Monthly Salary.
+- Salary Structure.
+- Attendance-Based Calculation.
+- Overtime.
+- Leave Deduction.
+- Salary Advance.
+- Monthly Salary Slip.
+- Payment History.
+
+Contract employee features:
+
+- Contract Details.
+- Contract Period.
+- Agreed Payment.
+- Work Completion.
+- Payment Status.
+
+Daily Wage Labour features:
+
+- Daily Rate.
+- Half-Day Rate.
+- Overtime.
+- Daily Attendance.
+- Weekly Settlement.
+- Advance Payment.
+- Remaining Payment.
+
+Generate professional salary slips and wage statements.
+
+Only authorized financial users can modify payment records.
+
+---
+
+# 14. PROJECT AND MULTIPLE SITE MANAGEMENT
+
+Create a complete Project Management module.
+
+Project fields:
+
+- Project ID.
+- Project Name.
+- Client.
+- Project Category.
+- Project Address.
+- City.
+- State.
+- Starting Date.
+- Expected Completion Date.
+- Budget.
+- Site Manager.
+- Assigned Employees.
+- Project Description.
+- Documents.
+- Project Status.
+
+Project statuses:
+
+- Planning.
+- Ongoing.
+- On Hold.
+- Completed.
+- Cancelled.
+
+Support multiple projects and multiple cities.
+
+Each project can have multiple sites, teams, work stages and assigned labour.
+
+Provide:
+
+- Project Dashboard.
+- Site Dashboard.
+- Progress Tracking.
+- Milestones.
+- Project Timeline.
+- Daily Progress Reports.
+- Site Photographs.
+- Deadline Alerts.
+- Delay Reports.
+
+---
+
+# 15. INTERIOR DESIGN MANAGEMENT
+
+Create a dedicated Interior Design module.
+
+Include:
+
+- Residential Interior.
+- Commercial Interior.
+- Office Interior.
+- Bedroom Design.
+- Modular Kitchen.
+- Living Room.
+- Bathroom.
+- Wardrobe.
+- Furniture.
+- False Ceiling.
+- Flooring.
+- Lighting.
+- Electrical Layout.
+- Plumbing Layout.
+- Wall Paint.
+- Tiles and Marble.
+
+Allow uploading:
+
+- 2D Floor Plans.
+- 3D Renders.
+- Design Images.
+- Material References.
+- Client Approval Documents.
+
+Include design revision history and client approval.
+
+---
+
+# 16. CONSTRUCTION AND INFRASTRUCTURE MANAGEMENT
+
+Include:
+
+- Site Preparation.
+- Foundation.
+- Civil Work.
+- Structure.
+- Brickwork.
+- Plastering.
+- Plumbing.
+- Electrical Work.
+- Waterproofing.
+- Flooring.
+- Painting.
+- Finishing.
+- Quality Inspection.
+- Safety Inspection.
+- Project Handover.
+
+Allow Site Manager to update progress, upload photographs and submit reports.
+
+Admin must be able to review and approve progress.
+
+---
+
+# 17. MATERIAL INVENTORY AND STOCK MANAGEMENT
+
+Create an Inventory Management module.
+
+Categories:
+
+- Cement.
+- Sand.
+- Steel.
+- Bricks.
+- Tiles.
+- Marble.
+- Wood.
+- Plywood.
+- Paint.
+- Electrical Items.
+- Plumbing Items.
+- Furniture Hardware.
+- Tools.
+- Construction Equipment.
+
+Features:
+
+- Material Name.
+- Brand.
+- Company.
+- Product Model.
+- Grade.
+- Quantity.
+- Unit.
+- Purchase Rate.
+- Supplier.
+- Stock Available.
+- Stock Issued.
+- Stock Returned.
+- Stock Damaged.
+- Site-Wise Stock.
+- Low Stock Alerts.
+- Purchase History.
+- Material Consumption Reports.
+
+Maintain an accurate stock ledger.
+
+---
+
+# 18. VENDOR AND SUPPLIER MANAGEMENT
+
+Create a Vendor Management module.
+
+Fields:
+
+- Vendor Name.
+- Company Name.
+- Mobile Number.
+- Email.
+- Address.
+- GSTIN.
+- Materials Supplied.
+- Purchase History.
+- Total Bills.
+- Payments.
+- Outstanding Balance.
+
+Include vendor invoices, payment tracking and outstanding reports.
+
+---
+
+# 19. COMPLETE QUOTATION MANAGEMENT MODULE INSIDE ADMIN PANEL
+
+This is a major feature.
+
+Add a dedicated Admin sidebar menu:
+
+**QUOTATION MANAGEMENT**
+
+Submenus:
+
+1. Quotation Dashboard.
+2. Create New Quotation.
+3. All Quotations.
+4. Draft Quotations.
+5. Sent Quotations.
+6. Approved Quotations.
+7. Rejected Quotations.
+8. Expired Quotations.
+
+Build a fully working quotation generator.
+
+## A. Quotation Dashboard
+
+Display:
+
+- Total Quotations.
+- Draft Quotations.
+- Sent Quotations.
+- Approved Quotations.
+- Rejected Quotations.
+- Expired Quotations.
+- Total Quotation Value.
+- Approved Business Value.
+
+Include search, filters and charts.
+
+## B. Quotation Number
+
+Generate unique quotation numbers automatically.
+
+Example:
+
+SIID/QTN/2026/0001
+
+Never reuse an existing quotation number.
+
+## C. Company Header Details
+
+Automatically display:
+
+- SIID Logo.
+- Sirahi Infrastructure & Interior Design.
+- GSTIN: 07DCYPA1228R1ZZ.
+- Mobile: 9650598785.
+- Website: https://sirahi.in.
+- Email: sirahiinfrainteriordesign@gmail.com.
+- Quotation Number.
+- Quotation Date.
+- Valid Until Date.
+
+## D. Client Information
+
+- Client Name.
+- Mobile.
+- Email.
+- Address.
+- City.
+- State.
+- GSTIN (optional).
+
+Allow selecting an existing client or creating a new client.
+
+## E. Project Information
+
+- Project Name.
+- Project Category.
+- Project Location.
+- Project Description.
+- Scope of Work.
+- Estimated Duration.
+- Expected Starting Date.
+- Expected Completion Date.
+
+## F. Itemized Quotation Table
+
+Columns:
+
+- Serial Number.
+- Work Category.
+- Work Description.
+- Material / Service.
+- Quantity.
+- Unit.
+- Rate.
+- Amount.
+
+Admin can add unlimited rows.
+
+Automatically calculate:
+
+Amount = Quantity × Rate.
+
+Allow:
+
+- Add Item.
+- Edit Item.
+- Delete Item.
+- Duplicate Item.
+- Reorder Items.
+- Custom Units.
+- Custom Descriptions.
+
+## G. MATERIAL DETAILS AND BRAND / COMPANY SPECIFICATIONS
+
+Create a separate, clearly visible and fully functional section inside the quotation creation page named:
+
+**MATERIAL DETAILS & BRAND / COMPANY SPECIFICATIONS**
+
+Do not hide this feature inside a simple text box.
+
+Build a dynamic material table with:
+
+1. Serial Number.
+2. Work Category.
+3. Material Name.
+4. Material Description.
+5. Brand / Company Name.
+6. Product Model / Code.
+7. Grade / Quality.
+8. Size / Thickness.
+9. Quantity.
+10. Unit.
+11. Rate Per Unit.
+12. Total Amount.
+13. Material Provided By – SIID or Client.
+14. Remarks.
+
+Admin must be able to enter the exact material and brand that will be used in the project.
+
+Examples:
+
+- Cement – UltraTech, ACC, Ambuja.
+- Steel – Tata Tiscon, JSW, SAIL.
+- Paint – Asian Paints, Berger, Nerolac.
+- Electrical Wire – Polycab, Havells, Finolex.
+- Switches – Anchor, Legrand, Havells.
+- Tiles – Kajaria, Somany, Johnson.
+- Plywood – CenturyPly, Greenply.
+- Bathroom Fittings – Jaquar, Cera, Hindware.
+- Pipes – Supreme, Astral.
+- Laminates – Merino, Greenlam.
+
+These are examples only.
+
+Never automatically assume or select a brand.
+
+Provide:
+
+- Searchable Brand Dropdown.
+- Custom Brand Entry.
+- Add Material.
+- Edit Material.
+- Delete Material.
+- Duplicate Material.
+- Upload Material Image.
+- Add Product Model.
+- Add Technical Specifications.
+- Add Custom Unit.
+- Brand To Be Confirmed option.
+
+Allow unlimited materials and multiple brands in a single quotation.
+
+Calculate material amount automatically.
+
+Provide the option to include material costs in item prices or show them separately.
+
+Prevent double-counting.
+
+## H. Other Work Specifications
+
+Add editable sections for:
+
+- Labour Specifications.
+- Design Specifications.
+- Work Execution Details.
+- Included Services.
+- Excluded Services.
+- Special Instructions.
+
+Admin must be able to write custom details without restrictions.
+
+## I. Financial Summary
+
+Automatically calculate:
+
+- Subtotal.
+- Material Charges.
+- Labour Charges.
+- Discount.
+- Transportation.
+- Additional Charges.
+- Applicable GST.
+- Grand Total.
+- Advance Payment.
+- Remaining Balance.
+
+Use Indian Rupees.
+
+Do not assume a universal GST rate. Allow authorized users to configure applicable tax treatment.
+
+Avoid duplicate material and labour calculations.
+
+## J. Payment Terms
+
+Allow Admin to enter:
+
+- Advance Percentage.
+- First Installment.
+- Milestone Payment.
+- Second Installment.
+- Final Payment.
+- Payment Method.
+- Due Dates.
+
+## K. Terms and Conditions
+
+Provide editable conditions for:
+
+- Quotation Validity.
+- Material.
+- Work Starting.
+- Project Delays.
+- Payment.
+- Cancellation.
+- Warranty.
+- Additional Work.
+- Other Conditions.
+
+## L. Signature Section
+
+Display:
+
+For SIID – Sirahi Infrastructure & Interior Design
+
+Authorized By: MD Zawed Ansar – Owner.
+
+Prepared By: Injmam Ansari – IT Head of SIID.
+
+Allow authorized signature upload.
+
+Provide client acceptance and signature fields.
+
+## M. Quotation Management Actions
+
+- Save Draft.
+- Preview.
+- Download PDF.
+- Edit Draft.
+- Duplicate.
+- Delete Draft.
+- Mark as Sent.
+- Share via WhatsApp.
+- Track Client Approval.
+- Track Rejection.
+- View Revision History.
+
+Approved quotations must not be silently modified.
+
+Create new revisions when changes are required.
+
+## N. Client Quotation Approval
+
+Client must be able to:
+
+- View assigned quotation.
+- Download quotation PDF.
+- View work details.
+- View material names.
+- View brands and companies.
+- View prices.
+- Approve quotation.
+- Reject quotation.
+- Submit comments.
+
+An approved quotation can be converted into a project and project budget.
+
+---
+
+# 20. PROFESSIONAL PDF GENERATOR AND COMPANY HEADER
+
+Create a professional PDF generator for:
+
+- Quotations.
+- Invoices.
+- Salary Slips.
+- Payment Receipts.
+- Expense Reports.
+- Project Reports.
+- Other authorized company documents.
+
+## Mandatory PDF Header
+
+At the top of every quotation PDF and invoice PDF, display:
+
+1. Actual SIID Company Logo.
+2. Full Company Name: Sirahi Infrastructure & Interior Design.
+3. GSTIN: 07DCYPA1228R1ZZ.
+4. Mobile Number: 9650598785.
+5. Website: sirahi.in.
+6. Official Email: sirahiinfrainteriordesign@gmail.com.
+7. Document Title.
+8. Document Date.
+
+PDF header design:
+
+- Logo aligned professionally on the left.
+- Full company name prominently displayed.
+- GSTIN, mobile and website clearly visible.
+- Document date clearly visible.
+- Premium Navy Blue and Gold branding.
+- Proper spacing and margins.
+- No overlapping text or images.
+
+Use the actual company logo stored in Firebase Storage.
+
+Make GSTIN editable through authorized Company Settings.
+
+Never use a fake GSTIN.
+
+If GSTIN is unavailable, display an honest configuration message or omit the field according to document settings.
+
+## PDF Formatting
+
+- Professional multi-page layout.
+- Repeated header where appropriate.
+- Footer with page numbers.
+- Clear tables.
+- Proper page breaks.
+- Indian currency format.
+- No clipped or missing content.
+- No overlapping elements.
+- Print-ready design.
+- Actual saved database records only.
+
+The material and brand table must appear in the generated quotation PDF.
+
+---
+
+# 21. INVOICE AND PAYMENT MANAGEMENT
+
+Create an Invoice Management module.
+
+Features:
+
+- Create Invoice.
+- Unique Invoice Number.
+- Select Client.
+- Select Project.
+- Add Work Items.
+- Add Materials.
+- Add Tax.
+- Add Discount.
+- Record Advance.
+- Record Payment.
+- Download Invoice PDF.
+- Record Payment Receipt.
+- Track Outstanding Balance.
+
+Display:
+
+- Total Project Amount.
+- Amount Paid.
+- Remaining Amount.
+- Payment Dates.
+- Payment Methods.
+- Transaction References.
+
+Never mark an unverified payment as received.
+
+---
+
+# 22. FINANCIAL MANAGEMENT AND EXPENSE TRACKING
+
+Create a complete Finance Dashboard.
+
+Income:
+
+- Client Advance.
+- Milestone Payments.
+- Final Payments.
+- Other Income.
+
+Expenses:
+
+- Salary.
+- Daily Wages.
+- Materials.
+- Transportation.
+- Vendor Payments.
+- Equipment.
+- Site Expenses.
+- Office Expenses.
+
+Include:
+
+- Project-Wise Profit and Loss.
+- Monthly Income.
+- Monthly Expenses.
+- Outstanding Payments.
+- Cash Flow.
+- Payment History.
+- Downloadable Reports.
+
+Only authorized users can access financial records.
+
+---
+
+# 23. CLIENT PANEL
+
+Create an elegant Client Dashboard.
+
+Display:
+
+- My Projects.
+- Project Progress.
+- Completed Work.
+- Remaining Work.
+- Expected Completion.
+- Project Timeline.
+- Project Photographs.
+- Approved Quotations.
+- Pending Quotations.
+- Invoices.
+- Amount Paid.
+- Remaining Amount.
+- Payment History.
+- Documents.
+- Notifications.
+- Complaint / Support Section.
+
+Clients must only see their own data.
+
+---
+
+# 24. EMPLOYEE PANEL
+
+Create a simple, mobile-friendly Employee Dashboard.
+
+Display:
+
+- My Profile.
+- Attendance.
+- Check In.
+- Check Out.
+- Assigned Project.
+- Assigned Site.
+- Daily Work.
+- Salary.
+- Wage History.
+- Advances.
+- Leave Requests.
+- Notifications.
+- Documents.
+- Support.
+
+Add a dedicated section:
+
+**CALL TO IT – SIID IT SUPPORT**
+
+IT Support Number: 7503354996.
+
+Add:
+
+- Call Now button using the correct telephone number.
+- WhatsApp Support using the correct number.
+- SIID IT Support label.
+
+Do not confuse the IT Support number with the Owner's contact number.
+
+---
+
+# 25. NOTIFICATION SYSTEM
+
+Create in-app notifications for:
+
+- New Employee Registration.
+- New Client Registration.
+- Registration Approval.
+- Registration Rejection.
+- New Project Assignment.
+- Attendance Updates.
+- Leave Requests.
+- New Quotations.
+- Quotation Approval.
+- Quotation Rejection.
+- Payment Updates.
+- Material Requests.
+- Low Stock Alerts.
+- Project Deadline Alerts.
+
+Notifications must be saved in the cloud database.
+
+Support push notifications where properly configured.
+
+---
+
+# 26. COMPANY SETTINGS
+
+Create a Company Settings module.
+
+Authorized Owner/Admin can configure:
+
+- Company Name.
+- Logo.
+- GSTIN.
+- Mobile Number.
+- Official Email.
+- Website.
+- Company Address.
+- Tax Settings.
+- PDF Header.
+- Signature.
+- User Permissions.
+- Application Settings.
+
+Initial values:
+
+Company Name: Sirahi Infrastructure & Interior Design.
+
+GSTIN: 07DCYPA1228R1ZZ.
+
+Owner Mobile: 9650598785.
+
+Email: sirahiinfrainteriordesign@gmail.com.
+
+Website: sirahi.in.
+
+IT Support: 7503354996.
+
+Never allow unauthorized employees or clients to change company settings.
+
+---
+
+# 27. FILE STORAGE
+
+Use Firebase Storage or the existing properly configured secure cloud storage.
+
+Store:
+
+- Company Logo.
+- Employee Photos.
+- Employee Documents.
+- Client Documents.
+- Project Images.
+- 2D Plans.
+- 3D Renders.
+- Material Images.
+- Quotations.
+- Invoices.
+- Payment Receipts.
+- Other Documents.
+
+Store file references and metadata in the database.
+
+Use secure file access rules.
+
+Do not expose private documents publicly.
+
+---
+
+# 28. DATABASE SECURITY AND BACKUP
+
+Implement secure database rules and backend authorization.
+
+Requirements:
+
+- Role-based access.
+- User-specific access.
+- Project-specific access.
+- Client-specific access.
+- Employee-specific access.
+- Secure file access.
+- Input validation.
+- Protection against unauthorized API requests.
+- Server-side financial calculations.
+- Secure account management.
+
+Set up automatic backups or scheduled database exports where supported.
+
+Provide a recovery process for important company data.
+
+Never expose private keys, service account credentials or SMS provider secrets in frontend code.
+
+---
+
+# 29. APPLICATION DEPLOYMENT AND SERVER CONFIGURATION
+
+Build the application with a deployment-ready architecture.
+
+Use:
+
+- Secure backend.
+- Cloud database.
+- Cloud file storage.
+- Environment variables.
+- Production authentication configuration.
+- Proper error logging.
+- Server-side validation.
+
+For real OTP SMS, configure Firebase Phone Authentication or an actual SMS provider.
+
+If a paid SMS provider, Firebase billing, domain authorization, server deployment or other external setup is required, clearly explain the exact steps.
+
+Do not assume that uploading an APK or website automatically configures SMS or cloud storage.
+
+Do not hardcode secret credentials.
+
+The application must use the same cloud backend across all authorized devices.
+
+---
+
+# 30. COMPLETE TESTING AND QUALITY CHECKS
+
+Before declaring the application complete, test every major module.
+
+## Authentication Tests
+
+- Admin login.
+- Employee login.
+- Client login.
+- Password reset.
+- Real OTP SMS.
+- Correct OTP.
+- Incorrect OTP.
+- Expired OTP.
+- Registration without OTP.
+- Admin approval.
+- Role-based permissions.
+
+## PDF Tests
+
+- Company logo.
+- Full company name.
+- GSTIN.
+- Owner mobile number.
+- Website.
+- Document date.
+- Quotation details.
+- Material names.
+- Brand/company names.
+- Product specifications.
+- Financial calculations.
+- Multi-page PDF.
+- Download functionality.
+
+## Cloud Database Tests
+
+- Save employee.
+- Save attendance.
+- Save project.
+- Save quotation.
+- Save material details.
+- Save payment.
+- Retrieve data after logout.
+- Retrieve data on another phone.
+- Update data from another phone.
+- Verify synchronization.
+- Reinstall application and verify previously synchronized records.
+
+## Security Tests
+
+- Employee cannot access Admin Dashboard.
+- Client cannot access Employee Dashboard.
+- Employee cannot see another employee's private records.
+- Client cannot access another client's projects.
+- Unapproved accounts cannot access dashboards.
+- Registration cannot bypass OTP.
+- Unauthorized users cannot change payments or quotations.
+
+## Final Testing Report
+
+Provide an honest report containing:
+
+1. Features implemented.
+2. Features successfully tested.
+3. Features requiring external configuration.
+4. Firebase setup status.
+5. SMS provider configuration status.
+6. Cloud database connection status.
+7. Storage configuration status.
+8. Multi-device synchronization status.
+9. Backup configuration status.
+10. Deployment instructions.
+
+Do not mark a feature as working unless it has actually been implemented and tested.
+
+---
+
+# 31. FINAL DEVELOPMENT INSTRUCTIONS
+
+Build the complete SIID ERP application from scratch.
+
+Do not just create a landing page or static dashboard.
+
+I need a fully functional application with:
+
+- Separate Admin, Employee and Client login.
+- Real mobile OTP verification.
+- Secure cloud authentication.
+- Permanent cloud database.
+- Multi-device synchronization.
+- Employee management.
+- Attendance.
+- Salary and wage management.
+- Project and site management.
+- Interior design management.
+- Construction management.
+- Inventory.
+- Vendor management.
+- Complete Admin Quotation Management.
+- Material and brand specifications.
+- Professional PDF generator.
+- Invoice management.
+- Finance management.
+- Client portal.
+- Employee portal.
+- Notifications.
+- Company settings.
+- Secure file storage.
+- Backup and recovery.
+
+Use reusable components and maintain clean, scalable code.
+
+Build the application in a modular architecture so that future features can be added without breaking existing functionality.
+
+Do not use sample data as actual business records.
+
+Do not create fake OTP functionality.
+
+Do not use device-only storage for important company records.
+
+Do not claim that SMS, cloud synchronization, backup or deployment is working without actual verification.
+
+If any external credentials, API keys, Firebase configuration or deployment steps are required, clearly identify them and guide me through the setup.
+
+**FINAL GOAL:**
+
+Create a premium, professional, secure and fully cloud-based SIID ERP system for Sirahi Infrastructure & Interior Design that can be used by the Owner, Admin, Employees, Labourers, Site Managers, Accountants, Interior Designers and Clients across multiple phones and computers.
+
+The application must preserve company data even after app uninstallation, support login from multiple devices, deliver real OTP SMS and generate professional branded quotations and invoices.

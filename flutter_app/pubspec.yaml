@@ -1,0 +1,33 @@
+name: siid_erp
+description: SIID ERP - Sirahi Infrastructure & Interior Design Enterprise Resource Planning Application
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  provider: ^6.1.2
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.3.2
+  connectivity_plus: ^6.0.5
+  intl: ^0.19.0
+  pdf: ^3.11.1
+  printing: ^5.13.3
+  path_provider: ^2.1.4
+  image_picker: ^1.1.2
+  file_picker: ^8.1.2
+  url_launcher: ^6.3.1
+  fl_chart: ^0.69.0
+  geolocator: ^13.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,6 @@
+{
+  "name": "SIID ERP",
+  "description": "Sirahi Infrastructure & Interior Design — Complete Enterprise Resource Planning system for projects, quotations, materials, attendance, payroll, invoices, and multi-device cloud sync.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
